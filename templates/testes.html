@@ -22,7 +22,6 @@
             method: "GET",
             success: function (data) {
                 data.forEach(user => {
-                    // Use a propriedade innerHTML corretamente
                     document.querySelector(".resultados").innerHTML += `<ul><li>${user.nome}</li></ul>`;
                 });
             },
